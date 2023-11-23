@@ -14,8 +14,6 @@ env:
   IMAGE_NAME: phoronix-test-suite
 
 jobs:
-  tests:
-    uses: ./.github/workflows/tests.yml
   # Push image to GitHub Packages.
   # See also https://docs.docker.com/docker-hub/builds/
   push:
