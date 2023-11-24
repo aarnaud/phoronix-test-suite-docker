@@ -6,3 +6,4 @@ RUN wget https://github.com/phoronix-test-suite/phoronix-test-suite/releases/dow
 RUN apt-get install -f ./phoronix-test-suite_10.8.4_all.deb -y && rm phoronix-test-suite_10.8.4_all.deb
 RUN /usr/bin/phoronix-test-suite make-openbenchmarking-cache lean
 RUN /usr/bin/phoronix-test-suite make-download-cache
+RUN rm -f /var/lib/phoronix-test-suite/core.pt2so
