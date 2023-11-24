@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Etc/UTC
 RUN apt-get update && apt-get install -y wget php-sqlite3 php-zip dumb-init unzip php-cli apt-utils mesa-utils php-xml git-core apt-file sudo
